@@ -7,6 +7,11 @@ This app is an assessment project given by Peddle Technologies to evaluate my sk
 There are links to different component on the home page namely; github page, landing page, and about page.
 Click on the logo at the top of this app to navigate back home from any page.
 
+### Library And Packages Used
+1. Reactjs: This app is built on React boiler plate.
+2. Node-sass: This is a css framework/library used for styling this application.
+3. React-Router-Dom: This is a package that allows easy navigation of this application without causing manual reload.
+4. React-Icons: This is a package that provides all the icons used in this application.
 
 ## Available Scripts
 
