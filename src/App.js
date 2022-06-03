@@ -1,10 +1,29 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import LandingPage from "./components/layout/LandingPage";
+import NavBar from "./components/layout/NavBar";
+import About from "./components/layout/About";
+import Home from "./components/layout/Home";
 
 
-function App() {
+import GitHub from "./components/user/GitHub";
+import { GitHubProvider } from "./context/GitHubContext";
+
+const App = () => {
   return (
-    <>
-      <h1>My app</h1>
-    </>
+    <GitHubProvider>
+      <>
+        <Router>
+          <NavBar/>
+            <Routes>
+              <Route path="/github" element={<GitHub/>}/>
+              <Route path="/comingsoon" element={<LandingPage/>}/>
+              <Route path="/about" element={<About/>}/>
+              <Route path="/" element={<Home/>}/>
+            </Routes>
+        </Router>
+      </>
+    </GitHubProvider>
   );
 }
 

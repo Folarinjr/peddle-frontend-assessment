@@ -1,0 +1,46 @@
+//NAVBAR STYLES
+.navBar{
+    display: flex;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: center;
+
+    //logo style
+    &__logo{
+        height: 7rem;
+        &--box{
+            margin-left: $marginR;
+            @media only screen and (max-width: 600px){
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    //Links styles
+    &__links{
+        display: flex;
+        gap: 1rem;
+        margin-right: $marginR;
+        @media only screen and (max-width: 600px){
+            display: none;
+        }
+        
+        &--link{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $colorDefault;
+            padding: $buttonPadding;
+        }
+    }
+}
+//ACTIVE CLASS
+.active{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $colorDefault;
+    padding: $buttonPadding;
+    border-radius: 2rem;
+    background-color: $buttonBg;
+    transition: background-color .8s ease-in;
+}

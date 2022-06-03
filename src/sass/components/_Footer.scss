@@ -1,0 +1,43 @@
+.footer{
+    padding: 3rem; 
+    color: $colorGray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media  only screen and (max-width: 900px) {
+        padding: 0;
+    }
+
+    &__icons{
+        display: flex;
+        gap: 3rem;
+        font-size: 2rem;
+        cursor: pointer;
+        @media  only screen and (max-width: 600px) {
+            gap: 1rem;
+        }
+    }
+
+    &__terms{
+        display: flex;
+        gap: 1.5rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        @media  only screen and (max-width: 600px) {
+            flex-direction: column;
+            gap: .3rem;
+            font-size: 1rem;
+        }
+    }
+
+    &__text{
+        @media  only screen and (max-width: 600px) {
+            font-size: .9rem;
+        }
+    }
+    &__active{
+        color: $colorDefault;
+        cursor: pointer;
+    }
+}

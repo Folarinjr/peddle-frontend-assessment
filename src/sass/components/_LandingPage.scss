@@ -1,0 +1,53 @@
+.header{
+    margin-top: 5rem;
+    &__Text{
+        text-align: center;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+
+        &--hero{
+            font-size: 3.8rem;
+            font-weight: 700;
+        }
+    }
+
+    &__time{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin: 2rem 0 2rem 0;
+        @media only screen and (max-width: 600px){
+            margin: 2rem auto;
+            flex-direction: column;
+            width: 50%;
+            margin-bottom: 5rem auto;
+        }
+
+        &--item{
+            background-color: $colorDefault;
+            color: $colorBlack;
+            padding: 2rem 1.7rem 1rem 1.7rem;
+            text-align: center;
+            border-radius: 5px;
+        }
+    }
+}
+.curve{
+    padding: 15rem 12rem 0 12rem;
+    width: 59%;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom right, #9f7acf60, #3c2aa028);
+    -webkit-clip-path: circle(46.1% at 50% 100%);
+            clip-path: circle(45.6% at 50% 100%);
+
+    @media  only screen and (max-width: 900px) {
+        width: 75%;
+    }
+    @media  only screen and (max-width: 600px) {
+        width: 100%;
+        padding: 20rem 15rem 0 15rem;
+        margin: 0;
+    }
+}

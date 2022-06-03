@@ -1,0 +1,44 @@
+.form{
+    &__name{
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        @media only screen and (max-width: 600px){
+            flex-direction: column;
+            gap: 5rem;
+            align-items: stretch;
+
+        }
+    }
+    &__submitField{
+        margin: 2rem auto;
+        position: relative;
+        width: 90%;
+    }
+    &__submit{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1rem;
+        border-radius: 18px;
+        background-color: $buttonBg;
+        border: none;
+        color: $colorDefault;
+        cursor: pointer;
+    }
+}
+
+input[type=text]{
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid $colorGray;
+    padding: .5rem;
+    border-radius: 5px;
+}
+input[type=email]{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 18px;
+    margin: 0 auto;
+    border: none;
+}
